@@ -8,7 +8,7 @@ import { verifyMail } from "./controllers/authController.js";
 import fileRoutes from "./routes/fileRoutes.js";
 import cors from "cors";
 import path from "path";
-import { fileURLToPath} from `url`;
+import { fileURLToPath} from 'url';
 //configure env
 dotenv.config();
 
