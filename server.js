@@ -8,7 +8,7 @@ import { verifyMail } from "./controllers/authController.js";
 import fileRoutes from "./routes/fileRoutes.js";
 import cors from "cors";
 import path from "path";
-import { fileURLToPath} from 'url';
+import { fileURLToPath} from `url`;
 //configure env
 dotenv.config();
 
@@ -17,7 +17,7 @@ connectDB();
 
 //esmodule fix
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.__dirname(__filename);
+const __dirname = path.dirname(__filename);
 
 const app=express();
 const http=httpObj.createServer(app);
